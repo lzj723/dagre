@@ -6,6 +6,7 @@
   "contributors": [
     "Matthew Dahl (https://github.com/sandersky)"
   ],
+  "license": "MIT",
   "main": "index.js",
   "keywords": [
     "graph",
@@ -13,14 +14,14 @@
   ],
   "dependencies": {
     "graphlib": "^2.1.7",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "benchmark": "^2.1.4",
     "browserify": "^16.2.3",
     "chai": "^4.1.2",
     "istanbul": "^0.4.5",
-    "jscs": "^3.0.7",
+    "eslint": "^5.13.0",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
     "karma": "^3.0.0",
@@ -41,5 +42,26 @@
     "type": "git",
     "url": "https://github.com/dagrejs/dagre.git"
   },
-  "license": "MIT"
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "mocha": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
+    }
+  }
 }
